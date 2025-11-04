@@ -3,356 +3,316 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solar Calculator - Professional Solar Energy Planning Tool</title>
-    <meta name="description" content="Calculate solar energy requirements, costs, and savings with our professional solar calculator.">
+    <title>Solar Calculator - Calculate Your Solar Investment & Savings</title>
+    <meta name="description" content="Professional solar energy calculator. Estimate plant costs, environmental impact, and financial savings.">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
     <link rel="stylesheet" href="calc.css">
 </head>
 <body>
-
+        <div id="main">
+        <div data-scroll data-scroll-speed="-5" id="page1">
+            <header class="header">
+            <nav class="nav container">
+                <div class="nav__data">
+                    <a href="index.html" class="nav__logo">
+                       <img src="images/Hedge5-logo-main.png" alt="">
+                    </a>
     
-    <div id="app" class="min-h-screen">
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__toggle-menu"></i>
+                        <i class="ri-close-line nav__toggle-close"></i>
+                    </div>
+                </div>
+
+                <!--=============== NAV MENU ===============-->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li>
+                            <a href="index.html" class="nav__link">Home</a>
+                        </li>
+
+                        <!--=============== DROPDOWN 1 ===============-->
+                        <li class="dropdown__item">                      
+                            <div class="nav__link dropdown__button">
+                                Discover <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-flashlight-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Make use of</span>
+    
+                                        <ul class="dropdown__list">
+                                           <li> 
+                                                <a href="calc.html" class="dropdown__link">Solar Calculator</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://hedge5.in/" class="dropdown__link">Hedge5</a>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+    
+                                   
+                                        
+                                    
+    
+                                   
+
+                        <!--=============== DROPDOWN 2 ===============-->
+                        <li class="dropdown__item">
+                            <div class="nav__link dropdown__button">
+                                Resources <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-code-line"></i>
+                                        </div>
+    
+                                       
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="wind-energy.html" class="dropdown__link">Wind Energy</a>
+                                            </li>
+                                            <li>
+                                                <a href="solar-energy.html" class="dropdown__link">Solar Energy</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-pen-nib-line"></i>
+                                        </div>
+    
+                                       
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="green.html" class="dropdown__link">Green Hydrogen</a>
+                                            </li>
+                                            <li>
+                                                <a href="hydropower.html" class="dropdown__link">Hydropower</a>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-apps-2-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Others</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">Recent blogs</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.linkedin.com/company/hedge5/posts/?feedView=all" class="dropdown__link">Updatess</a>
+                                            </li>
+                                            <li>
+                                                <a href="faq.html" class="dropdown__link">Faq's</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                       
+
+                        <!--=============== DROPDOWN 3 ===============-->
+                        <li class="dropdown__item">                        
+                            <div class="nav__link dropdown__button">
+                                Company <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-community-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Contact Us</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="https://hedge5.in/contact.html" class="dropdown__link">Contact us</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-shield-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Coorporate Info</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">Reports</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Notice</a>
+                                            </li>
+                                             <li>
+                                                <a href="#" class="dropdown__link">Vision Blower Policy</a>
+                                            </li>
+                                             <li>
+                                                <a href="#" class="dropdown__link">CSI</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
         <div class="container">
-            <!-- Header -->
-            <div class="header">
-                <div>
-                    <h1>Solar Calculator</h1>
-                    <p class="subtitle">Professional Solar Energy Planning Tool</p>
-                </div>
-                
+            <!-- Title Section -->
+            <div class="title-section">
+                <h2 class="main-title">Solar Calculator</h2>
+                <p class="main-description">Calculate your solar investment and environmental impact</p>
             </div>
 
-            
+            <!-- Progress Bar -->
+            <div class="progress-bar" id="progressBar">
+                <!-- Progress steps will be generated by JS -->
+            </div>
 
-            <!-- Hero Section -->
-            <div id="heroSection" class="hero-section">
-                <div class="hero-content">
-                    <h2>Plan Your Solar Energy Investment</h2>
-                    <p class="hero-description">
-                        Our comprehensive solar calculator helps you determine the optimal solar plant capacity for your needs. 
-                        Calculate energy consumption, estimate costs, evaluate environmental impact, and understand your financial returns 
-                        over a 25-year period. Make informed decisions with precise calculations based on your actual electricity usage 
-                        and local solar irradiation data.
-                    </p>
-                    <div class="hero-grid">
-                        <div class="hero-card">
-                            <h3>Accurate Calculations</h3>
-                            <p>Based on your consumption patterns and solar irradiation data</p>
-                        </div>
-                        <div class="hero-card">
-                            <h3>Cost Estimation</h3>
-                            <p>Detailed pricing tiers and ROI analysis for your investment</p>
-                        </div>
-                        <div class="hero-card">
-                            <h3>Environmental Impact</h3>
-                            <p>See your contribution to CO2 reduction and sustainability</p>
-                        </div>
-                    </div>
+            <!-- Form Card -->
+            <div class="card">
+                <div id="stepContent">
+                    <!-- Step content will be inserted here by JS -->
                 </div>
             </div>
 
-            <!-- Step Indicator -->
-            <div class="step-indicator">
-                <div class="step active" data-step="1">
-                    <div class="step-number">1</div>
-                    <div class="step-label">Contact Info</div>
-                </div>
-                <div class="step" data-step="2">
-                    <div class="step-number">2</div>
-                    <div class="step-label">Consumption</div>
-                </div>
-                <div class="step" data-step="3">
-                    <div class="step-number">3</div>
-                    <div class="step-label">Cost</div>
-                </div>
-                <div class="step" data-step="4">
-                    <div class="step-number">4</div>
-                    <div class="step-label">CM1</div>
-                </div>
-                <div class="step" data-step="5">
-                    <div class="step-number">5</div>
-                    <div class="step-label">Environmental</div>
-                </div>
-                <div class="step" data-step="6">
-                    <div class="step-number">6</div>
-                    <div class="step-label">Summary</div>
-                </div>
-            </div>
-
-            <!-- Step 1: Contact Information -->
-            <div id="step1" class="step-content active">
-                <div class="card">
-                    <h2 class="card-title">Contact Information</h2>
-                    <p class="card-description">Please provide your contact details to begin</p>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Name *</label>
-                            <input type="text" id="name" required>
-                            <span class="error-message" id="nameError"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number *</label>
-                            <input type="tel" id="phone" required>
-                            <span class="error-message" id="phoneError"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="address">Address *</label>
-                            <input type="text" id="address" required>
-                            <span class="error-message" id="addressError"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="company">Company Name *</label>
-                            <input type="text" id="company" required>
-                            <span class="error-message" id="companyError"></span>
-                        </div>
-                        <div class="button-group">
-                            <button type="submit" class="btn btn-primary">Next</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <!-- Step 2: Consumption Calculator -->
-            <div id="step2" class="step-content">
-                <div class="card">
-                    <h2 class="card-title">Energy Consumption Analysis</h2>
-                    <p class="card-description">Enter your current electricity consumption details</p>
-                    <form id="consumptionForm">
-                        <div class="form-group">
-                            <label for="monthlyBill">Monthly Bill (INR) *</label>
-                            <input type="number" id="monthlyBill" step="0.01" required>
-                            <span class="error-message" id="monthlyBillError"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="currentTariff">Current Tariff (INR/Unit) *</label>
-                            <input type="number" id="currentTariff" step="0.01" required>
-                            <span class="error-message" id="currentTariffError"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="solarAtlas">Solar Atlas I/P (kWh/sq.m/day) *</label>
-                            <input type="number" id="solarAtlas" step="0.01" required>
-                            <span class="error-message" id="solarAtlasError"></span>
-                        </div>
-                        <div id="consumptionResults" class="results-grid" style="display: none;">
-                            <div class="result-item">
-                                <span class="result-label">Units/Month:</span>
-                                <span id="unitsPerMonth" class="result-value">-</span>
-                            </div>
-                            <div class="result-item">
-                                <span class="result-label">Units/Day:</span>
-                                <span id="unitsPerDay" class="result-value">-</span>
-                            </div>
-                            <div class="result-item">
-                                <span class="result-label">Generations/Day:</span>
-                                <span id="generationsPerDay" class="result-value">-</span>
-                            </div>
-                            <div class="result-item">
-                                <span class="result-label">Plant Capacity (W):</span>
-                                <span id="plantCapacity" class="result-value">-</span>
-                            </div>
-                            <div class="result-item">
-                                <span class="result-label">Sanctioned Load (W):</span>
-                                <span id="sanctionedLoad" class="result-value">-</span>
-                            </div>
-                        </div>
-                        <div class="button-group">
-                            <button type="button" class="btn btn-secondary" onclick="previousStep()">Back</button>
-                            <button type="submit" class="btn btn-primary">Calculate & Next</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <!-- Step 3: Cost Determination -->
-            <div id="step3" class="step-content">
-                <div class="card">
-                    <h2 class="card-title">Cost Determination</h2>
-                    <p class="card-description">Plant cost based on sanctioned load</p>
-                    <div id="costResults" class="results-grid">
-                        <div class="result-item">
-                            <span class="result-label">Sanctioned Load (W):</span>
-                            <span id="costSanctionedLoad" class="result-value">-</span>
-                        </div>
-                        <div class="result-item">
-                            <span class="result-label">Proposal Price (INR/W):</span>
-                            <span id="proposalPrice" class="result-value">-</span>
-                        </div>
-                        <div class="result-item">
-                            <span class="result-label">Plant Cost W/O GST (INR):</span>
-                            <span id="plantCostWOGST" class="result-value">-</span>
-                        </div>
-                    </div>
-                    <div class="button-group">
-                        <button type="button" class="btn btn-secondary" onclick="previousStep()">Back</button>
-                        <button type="button" class="btn btn-primary" onclick="nextStep()">Next</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Step 4: CM1 Calculator -->
-            <div id="step4" class="step-content">
-                <div class="card">
-                    <h2 class="card-title">CM1 Calculation</h2>
-                    <p class="card-description">Calculate your commercial margin</p>
-                    <form id="cm1Form">
-                        <div class="results-grid">
-                            <div class="result-item">
-                                <span class="result-label">Plant Cost (INR):</span>
-                                <span id="cm1PlantCost" class="result-value">-</span>
-                            </div>
-                            <div class="result-item">
-                                <span class="result-label">Plant Capacity (W):</span>
-                                <span id="cm1PlantCapacity" class="result-value">-</span>
-                            </div>
-                            <div class="result-item">
-                                <span class="result-label">Plant Cost/KW (INR/W):</span>
-                                <span id="cm1PlantCostPerKW" class="result-value">-</span>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="purchaseCostPerKW">Purchase Cost/KW (INR/W) *</label>
-                            <input type="number" id="purchaseCostPerKW" step="0.01" required>
-                            <span class="error-message" id="purchaseCostPerKWError"></span>
-                        </div>
-                        <div id="cm1Results" class="results-grid" style="display: none;">
-                            <div class="result-item highlight">
-                                <span class="result-label">CM1:</span>
-                                <span id="cm1Value" class="result-value">-</span>
-                            </div>
-                        </div>
-                        <div class="button-group">
-                            <button type="button" class="btn btn-secondary" onclick="previousStep()">Back</button>
-                            <button type="submit" class="btn btn-primary">Calculate & Next</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <!-- Step 5: Environmental Impact -->
-            <div id="step5" class="step-content">
-                <div class="card">
-                    <h2 class="card-title">Environmental Impact</h2>
-                    <p class="card-description">Your contribution to sustainability</p>
-                    <div class="results-grid">
-                        <div class="result-item highlight">
-                            <span class="result-label">CO₂ Savings/Year (Kg):</span>
-                            <span id="co2SavingsYear" class="result-value">-</span>
-                        </div>
-                        <div class="result-item highlight">
-                            <span class="result-label">Lifetime CO₂ Savings (Million Kg):</span>
-                            <span id="co2SavingsLifetime" class="result-value">-</span>
-                        </div>
-                    </div>
-                    <div class="button-group">
-                        <button type="button" class="btn btn-secondary" onclick="previousStep()">Back</button>
-                        <button type="button" class="btn btn-primary" onclick="nextStep()">Next</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Step 6: Financial Summary -->
-            <div id="step6" class="step-content">
-                <div class="card">
-                    <h2 class="card-title">Financial Summary</h2>
-                    <p class="card-description">Complete financial analysis and ROI</p>
-                    <form id="financialForm">
-                        <div class="result-item">
-                            <span class="result-label">Plant Cost W/O GST (INR):</span>
-                            <span id="finalPlantCost" class="result-value">-</span>
-                        </div>
-                        <div class="form-group">
-                            <label for="currentBillPaymentPerYear">Current Bill Payment/Year (INR) *</label>
-                            <input type="number" id="currentBillPaymentPerYear" step="0.01" required>
-                            <span class="error-message" id="currentBillPaymentPerYearError"></span>
-                        </div>
-                        <div id="financialResults" class="results-grid" style="display: none;">
-                            <div class="result-item">
-                                <span class="result-label">Bill Payment for 25 Years (INR):</span>
-                                <span id="billPayment25Years" class="result-value">-</span>
-                            </div>
-                            <div class="result-item highlight">
-                                <span class="result-label">Payback Period (Years):</span>
-                                <span id="paybackYears" class="result-value">-</span>
-                            </div>
-                            <div class="result-item highlight">
-                                <span class="result-label">Lifetime Savings (INR):</span>
-                                <span id="lifetimeSavings" class="result-value">-</span>
-                            </div>
-                        </div>
-                        <div class="button-group">
-                            <button type="button" class="btn btn-secondary" onclick="previousStep()">Back</button>
-                            <button type="submit" class="btn btn-primary">Calculate</button>
-                            <button type="button" class="btn btn-primary" onclick="printReport()" style="display: none;" id="printBtn">Print Report</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <!-- Print Summary (Hidden, shows all data) -->
-            <div id="printSummary" style="display: none;">
-                <div class="print-header">
-                    <h1>Solar Calculator - Complete Report</h1>
-                    <p>Generated on <span id="printDate"></span></p>
-                </div>
-                
-                <div class="print-section">
-                    <h2>Contact Information</h2>
-                    <table>
-                        <tr><td>Name:</td><td id="printName"></td></tr>
-                        <tr><td>Phone:</td><td id="printPhone"></td></tr>
-                        <tr><td>Address:</td><td id="printAddress"></td></tr>
-                        <tr><td>Company:</td><td id="printCompany"></td></tr>
-                    </table>
-                </div>
-
-                <div class="print-section">
-                    <h2>Consumption Analysis</h2>
-                    <table>
-                        <tr><td>Monthly Bill:</td><td id="printMonthlyBill"></td></tr>
-                        <tr><td>Current Tariff:</td><td id="printCurrentTariff"></td></tr>
-                        <tr><td>Solar Atlas I/P:</td><td id="printSolarAtlas"></td></tr>
-                        <tr><td>Units/Month:</td><td id="printUnitsPerMonth"></td></tr>
-                        <tr><td>Units/Day:</td><td id="printUnitsPerDay"></td></tr>
-                        <tr><td>Generations/Day:</td><td id="printGenerationsPerDay"></td></tr>
-                        <tr><td>Plant Capacity:</td><td id="printPlantCapacity"></td></tr>
-                        <tr><td>Sanctioned Load:</td><td id="printSanctionedLoad"></td></tr>
-                    </table>
-                </div>
-
-                <div class="print-section">
-                    <h2>Cost Analysis</h2>
-                    <table>
-                        <tr><td>Proposal Price:</td><td id="printProposalPrice"></td></tr>
-                        <tr><td>Plant Cost W/O GST:</td><td id="printPlantCostWOGST"></td></tr>
-                    </table>
-                </div>
-
-                <div class="print-section">
-                    <h2>CM1 Analysis</h2>
-                    <table>
-                        <tr><td>Purchase Cost/KW:</td><td id="printPurchaseCostPerKW"></td></tr>
-                        <tr><td>CM1:</td><td id="printCM1"></td></tr>
-                    </table>
-                </div>
-
-                <div class="print-section">
-                    <h2>Environmental Impact</h2>
-                    <table>
-                        <tr><td>CO₂ Savings/Year:</td><td id="printCO2Year"></td></tr>
-                        <tr><td>Lifetime CO₂ Savings:</td><td id="printCO2Lifetime"></td></tr>
-                    </table>
-                </div>
-
-                <div class="print-section">
-                    <h2>Financial Summary</h2>
-                    <table>
-                        <tr><td>Current Bill Payment/Year:</td><td id="printCurrentBillYear"></td></tr>
-                        <tr><td>Bill Payment for 25 Years:</td><td id="printBill25Years"></td></tr>
-                        <tr><td>Payback Period:</td><td id="printPayback"></td></tr>
-                        <tr><td>Lifetime Savings:</td><td id="printLifetimeSavings"></td></tr>
-                    </table>
-                </div>
+            <!-- Navigation Buttons -->
+            <div class="navigation">
+                <button class="btn btn-outline" id="prevBtn" onclick="previousStep()">
+                    <span>← Previous</span>
+                </button>
+                <button class="btn btn-primary" id="nextBtn" onclick="nextStep()">
+                    <span id="nextBtnText">Next →</span>
+                </button>
             </div>
         </div>
+    </main>
+
+    <!-- Toast Container -->
+    <div id="toastContainer" class="toast-container"></div>
+
+                <!--=============== FOOTER ===============-->
+        <footer class="enhanced-footer">
+            <div class="footer-container">
+                <!-- Main Footer Content -->
+                <div class="footer-content">
+                    <!-- Brand Section -->
+                    <div class="footer-brand" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                        <img src="images/Hedge5-logo-main.png" alt="Hedge5 Logo" class="footer-logo">
+                        <p class="footer-description">
+                            Your sustainability partner. We help businesses achieve their sustainability goals through actionable insights and innovative technology.
+                        </p>
+                        <div class="footer-social">
+                            <a href="https://in.linkedin.com/company/hedge5" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                                <i class="ri-linkedin-box-fill"></i>
+                            </a>
+                            <a href="https://in.linkedin.com/company/hedge5" class="social-link" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href="https://in.linkedin.com/company/hedge5" class="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="https://in.linkedin.com/company/hedge5" class="social-link" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                                <i class="ri-youtube-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-section" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="calc.html">Solar Calculator</a></li>
+                            <li><a href="https://hedge5.in/index.html">Hedge5</a></li>
+                            <li><a href="faq.html">Faq's</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Services -->
+                    <div class="footer-section" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                        <h3>Services</h3>
+                        <ul class="footer-links">
+                            <li><a href="solar-energy.html">Solar Energy</a></li>
+                            <li><a href="wind-energy.html">Wind Energy</a></li>
+                            <li><a href="hydropower.html">Hydropower</a></li>
+                            <li><a href="green.html">Green Technology</a></li>
+                            <li><a href="index.html">Bio Solutions</a></li>
+                            <li><a href="ren.html">Renewable Energy</a></li>
+                            <li><a href="green-applications.html">Green Applications</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="footer-section" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                        <h3>Contact Info</h3>
+                        <div class="footer-contact">
+                            <div class="contact-item">
+                                <i class="ri-map-pin-line"></i>
+                                <span>Anthill IQ Workspace, Windsor F4, 75/B, Bannerghatta Rd, opp. Christ University, Syndicate Bank Colony, Omkar Nagar, Hulimavu, Bengaluru, Karnataka 560076</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="ri-phone-line"></i>
+                                <span>+91 7022305897</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="ri-mail-line"></i>
+                                <span>contact@hedge5.in</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="ri-time-line"></i>
+                                <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Bottom -->
+                <div class="footer-bottom">
+                    <div class="footer-copyright">
+                        <p>© 2025 Hedge5. All rights reserved.</p>
+                    </div>
+                    <div class="footer-legal">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 
     <script src="calc.js"></script>
