@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hedge5 - Solar Energy</title>
+  <link href="solar-energy-styles.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <div class="solar-energy-page">
+    <!-- Hero Section -->
+    <section id="hero-section" class="hero-section">
+      <!-- Animated Background -->
+      <div class="bg-elements">
+        <div class="bg-circle bg-circle-1 parallax-slow"></div>
+        <div class="bg-circle bg-circle-2 parallax-fast"></div>
+        <div class="bg-circle bg-circle-3 parallax-slow"></div>
+        <div class="bg-circle bg-circle-4 parallax-fast"></div>
+      </div>
+
+   <div id="main">
+        <div data-scroll data-scroll-speed="-5" id="page1">
+            <header class="header">
+            <nav class="nav container">
+                <div class="nav__data">
+                    <a href="index.html" class="nav__logo">
+                       <img src="images/Hedge5-logo-main.png" alt="">
+                    </a>
+    
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__toggle-menu"></i>
+                        <i class="ri-close-line nav__toggle-close"></i>
+                    </div>
+                </div>
+
+                <!--=============== NAV MENU ===============-->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li>
+                            <a href="index.html" class="nav__link">Home</a>
+                        </li>
+
+                        <!--=============== DROPDOWN 1 ===============-->
+                        <li class="dropdown__item">                      
+                            <div class="nav__link dropdown__button">
+                                Discover <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-flashlight-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Make use of</span>
+    
+                                        <ul class="dropdown__list">
+                                           <li> 
+                                                <a href="calc.html" class="dropdown__link">Solar Calculator</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://hedge5.in/" class="dropdown__link">Hedge5</a>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+    
+                                   
+                                        
+                                    
+    
+                                   
+
+                        <!--=============== DROPDOWN 2 ===============-->
+                        <li class="dropdown__item">
+                            <div class="nav__link dropdown__button">
+                                Resources <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-code-line"></i>
+                                        </div>
+    
+                                       
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="wind-energy.html" class="dropdown__link">Wind Energy</a>
+                                            </li>
+                                            <li>
+                                                <a href="solar-energy.html" class="dropdown__link">Solar Energy</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-pen-nib-line"></i>
+                                        </div>
+    
+                                       
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="green.html" class="dropdown__link">Green Hydrogen</a>
+                                            </li>
+                                            <li>
+                                                <a href="hydropower.html" class="dropdown__link">Hydropower</a>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-apps-2-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Others</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">Recent blogs</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.linkedin.com/company/hedge5/posts/?feedView=all" class="dropdown__link">Updatess</a>
+                                            </li>
+                                            <li>
+                                                <a href="faq.html" class="dropdown__link">Faq's</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                       
+
+                        <!--=============== DROPDOWN 3 ===============-->
+                        <li class="dropdown__item">                        
+                            <div class="nav__link dropdown__button">
+                                Company <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-community-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Contact Us</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="https://hedge5.in/contact.html" class="dropdown__link">Contact us</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-shield-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Coorporate Info</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">Reports</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Notice</a>
+                                            </li>
+                                             <li>
+                                                <a href="#" class="dropdown__link">Vision Blower Policy</a>
+                                            </li>
+                                             <li>
+                                                <a href="#" class="dropdown__link">CSI</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+
+
+                
+
+      <!-- Sun Icon with Rays -->
+      <div class="sun-container floating-sun">
+        <div class="sun-wrapper">
+          <div class="sun-rays">
+            <div class="ray ray-top"></div>
+            <div class="ray ray-bottom"></div>
+            <div class="ray ray-left"></div>
+            <div class="ray ray-right"></div>
+          </div>
+          <div class="sun-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24" fill="none" stroke="#4DB9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2"></path>
+              <path d="M12 20v2"></path>
+              <path d="m4.93 4.93 1.41 1.41"></path>
+              <path d="m17.66 17.66 1.41 1.41"></path>
+              <path d="M2 12h2"></path>
+              <path d="M20 12h2"></path>
+              <path d="m6.34 17.66-1.41 1.41"></path>
+              <path d="m19.07 4.93-1.41 1.41"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h1 id="hero-title" class="hero-title">Solar Energy</h1>
+        
+        <h1 id="hero-subtitle" class="hero-subtitle">
+          Solar Energy
+        </h1>
+        
+        <p class="hero-description">
+          Our premium solar installations combine advanced technology with elegant design, offering clean energy solutions that reduce your carbon footprint while enhancing your property's value. With over a decade of experience in renewable energy, our expert team delivers customized solar systems that meet your unique needs and exceed your expectations.
+        </p>
+        
+        <div id="cta-buttons" class="cta-buttons">
+          <button class="primary-button">Explore Solutions</button>
+         <a href="calc.html"> <button class="secondary-button">Solar Calculator</button></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features-section" class="section-reveal features-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Why Choose Our Solar Solutions?</h2>
+          <p class="section-subtitle">
+            Experience the future of energy with our cutting-edge solar technology, 
+            designed to deliver maximum efficiency and long-term value.
+          </p>
+          <p class="section-description">
+            At Hedge5, we believe in creating sustainable energy solutions that not only reduce your carbon footprint but also provide significant financial benefits. Our solar systems are engineered to withstand harsh weather conditions, require minimal maintenance, and integrate seamlessly with your existing infrastructure. From initial consultation to ongoing support, we ensure a smooth transition to clean, renewable energy.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon-container feature-icon-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4"></circle>
+                <path d="M12 2v2"></path>
+                <path d="M12 20v2"></path>
+                <path d="m4.93 4.93 1.41 1.41"></path>
+                <path d="m17.66 17.66 1.41 1.41"></path>
+                <path d="M2 12h2"></path>
+                <path d="M20 12h2"></path>
+                <path d="m6.34 17.66-1.41 1.41"></path>
+                <path d="m19.07 4.93-1.41 1.41"></path>
+              </svg>
+            </div>
+            <h3>High Efficiency Panels</h3>
+            <p>State-of-the-art photovoltaic technology with up to 22% efficiency ratings for maximum energy generation even in suboptimal conditions.</p>
+            <div class="feature-hover-line"></div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-container feature-icon-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="4" x2="4" y1="21" y2="14"></line>
+                <line x1="4" x2="4" y1="10" y2="3"></line>
+                <line x1="12" x2="12" y1="21" y2="12"></line>
+                <line x1="12" x2="12" y1="8" y2="3"></line>
+                <line x1="20" x2="20" y1="21" y2="16"></line>
+                <line x1="20" x2="20" y1="12" y2="3"></line>
+                <line x1="2" x2="6" y1="14" y2="14"></line>
+                <line x1="10" x2="14" y1="8" y2="8"></line>
+                <line x1="18" x2="22" y1="16" y2="16"></line>
+              </svg>
+            </div>
+            <h3>Smart Energy Management</h3>
+            <p>Intelligent monitoring systems that optimize energy production and consumption in real-time, allowing you to track performance from anywhere.</p>
+            <div class="feature-hover-line"></div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-container feature-icon-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2c.8 0 1.56.23 2.16.65.64.45 1.11 1.11 1.33 1.85.28.92.77 1.7 1.51 2.21.56.39 1.24.62 2 .62.96 0 1.81-.41 2.4-1.08.72-.82.82-1.75.55-2.86-.27-1.09-.78-2.11-1.5-3C19.69.5 17.87 0 16 0c-1.87 0-3.69.5-5.45 1.39-.72.89-1.23 1.91-1.5 3-.27 1.11-.17 2.04.55 2.86.59.67 1.44 1.08 2.4 1.08.76 0 1.44-.23 2-.62.74-.51 1.23-1.29 1.51-2.21.22-.74.69-1.4 1.33-1.85C11.44 3.23 8.8 0 12 2Z"></path>
+                <path d="M7 10.5c-1.66 0-3 1.34-3 3 0 .62.19 1.19.5 1.67.8 1.23 1.68 2 3.5 2 1.82 0 2.7-.77 3.5-2 .31-.48.5-1.05.5-1.67 0-1.66-1.34-3-3-3h-2Z"></path>
+                <path d="M7 16.5c-1.66 0-3 1.34-3 3s1.34 3 3 3h11c1.66 0 3-1.34 3-3s-1.34-3-3-3H7Z"></path>
+              </svg>
+            </div>
+            <h3>25-Year Performance Warranty</h3>
+            <p>Long-term performance guarantee with comprehensive maintenance and support services ensuring your investment is protected for decades.</p>
+            <div class="feature-hover-line"></div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-container feature-icon-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+              </svg>
+            </div>
+            <h3>Net Zero Solutions</h3>
+            <p>Complete carbon-neutral energy systems designed to achieve your sustainability goals while maximizing energy independence and resilience.</p>
+            <div class="feature-hover-line"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process-section" class="section-reveal process-section">
+      <div class="bg-elements">
+        <div class="bg-blob blob-1"></div>
+        <div class="bg-blob blob-2"></div>
+      </div>
+      
+      <div class="container">
+        <div class="section-header">
+          <h2 class="process-title">Our Solar Installation Process</h2>
+          <p class="section-subtitle">A seamless journey from consultation to clean energy generation</p>
+          <p class="section-description">
+            We've refined our installation process to ensure maximum efficiency and minimal hassle for our clients. Each step is handled by experienced professionals dedicated to delivering a premium solar experience. From the initial site assessment to final system activation, our team manages every detail with precision and care, ensuring your transition to solar energy is smooth and rewarding.
+          </p>
+        </div>
+
+        <div class="process-steps">
+          <!-- Connecting Line -->
+          <div class="process-line"></div>
+
+          <div class="process-grid">
+            <div class="process-step">
+              <div class="process-step-content">
+                <div class="step-number">01</div>
+                <div class="step-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                    <path d="m9 14 2 2 4-4"></path>
+                  </svg>
+                </div>
+                <h3>Free Consultation</h3>
+                <p>Our experts analyze your energy needs and site conditions to design the optimal solar solution for your property.</p>
+              </div>
+            </div>
+
+            <div class="process-step">
+              <div class="process-step-content">
+                <div class="step-number">02</div>
+                <div class="step-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                    <path d="M3 9h18"></path>
+                    <path d="m8 14 3 3 5-5"></path>
+                  </svg>
+                </div>
+                <h3>Detailed Proposal</h3>
+                <p>Receive a comprehensive proposal including system specifications, expected energy production, and financial benefits.</p>
+              </div>
+            </div>
+
+            <div class="process-step">
+              <div class="process-step-content">
+                <div class="step-number">03</div>
+                <div class="step-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M8 2v4"></path>
+                    <path d="M16 2v4"></path>
+                    <rect x="2" y="6" width="20" height="16" rx="2"></rect>
+                    <path d="M9.5 14.5 11 16l3-3"></path>
+                  </svg>
+                </div>
+                <h3>Professional Installation</h3>
+                <p>Our certified technicians handle the entire installation process with minimal disruption to your daily routine.</p>
+              </div>
+            </div>
+
+            <div class="process-step">
+              <div class="process-step-content">
+                <div class="step-number">04</div>
+                <div class="step-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                  </svg>
+                </div>
+                <h3>Ongoing Support</h3>
+                <p>24/7 monitoring, regular maintenance, and dedicated customer service to ensure optimal system performance.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="process-cta">
+          <button class="primary-button">Contact now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image Slider -->
+    <section id="image-slider" class="section-reveal image-slider-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Solar Installations</h2>
+          <p class="section-subtitle">
+            Discover our portfolio of successful solar energy projects across residential, commercial, and industrial sectors.
+          </p>
+          <p class="section-description">
+            Each project is meticulously designed to maximize energy production while complementing the architectural aesthetics of the property. Our engineering team considers factors like sun exposure, roof angle, shading, and local weather patterns to create systems that deliver optimal performance year-round.
+          </p>
+        </div>
+
+        <div class="slider-container">
+          <div class="slider-wrapper">
+            <div class="slide slide-active" data-slide="0">
+              <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&h=800&fit=crop" alt="Residential Solar Installations">
+              <div class="slide-content">
+                <h3>Residential Solar Installations</h3>
+                <p>Transform your home with premium solar panel systems designed for aesthetic appeal and maximum energy production.</p>
+                <p class="slide-details">Seamlessly integrated with your home's architecture using sleek, modern panels.</p>
+              </div>
+            </div>
+            <div class="slide" data-slide="1">
+              <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&h=800&fit=crop" alt="Commercial Solar Solutions">
+              <div class="slide-content">
+                <h3>Commercial Solar Solutions</h3>
+                <p>Scale your business sustainability with enterprise-grade solar installations that reduce operational costs.</p>
+                <p class="slide-details">Custom designed systems for warehouses, office buildings, and retail spaces.</p>
+              </div>
+            </div>
+            <div class="slide" data-slide="2">
+              <img src="https://images.unsplash.com/photo-1500673922987-e212871fec22?w=1200&h=800&fit=crop" alt="Solar Farm Development">
+              <div class="slide-content">
+                <h3>Solar Farm Development</h3>
+                <p>Large-scale renewable energy infrastructure projects that power communities and generate revenue.</p>
+                <p class="slide-details">Comprehensive development services from site assessment to grid connection.</p>
+              </div>
+            </div>
+            <div class="slide" data-slide="3">
+              <img src="https://images.unsplash.com/photo-1615729947596-a598e5de0ab3?w=1200&h=800&fit=crop" alt="Green Energy Storage">
+              <div class="slide-content">
+                <h3>Green Energy Storage</h3>
+                <p>Advanced battery systems for 24/7 clean energy access, grid stabilization and emergency backup.</p>
+                <p class="slide-details">Intelligent systems that optimize energy usage and provide resilience during outages.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation Arrows -->
+          <button class="slider-arrow slider-prev" aria-label="Previous slide">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m15 18-6-6 6-6"></path>
+            </svg>
+          </button>
+          <button class="slider-arrow slider-next" aria-label="Next slide">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m9 18 6-6-6-6"></path>
+            </svg>
+          </button>
+
+          <!-- Dots Indicator -->
+          <div class="slider-dots">
+            <button class="slider-dot active" data-slide="0" aria-label="Go to slide 1"></button>
+            <button class="slider-dot" data-slide="1" aria-label="Go to slide 2"></button>
+            <button class="slider-dot" data-slide="2" aria-label="Go to slide 3"></button>
+            <button class="slider-dot" data-slide="3" aria-label="Go to slide 4"></button>
+          </div>
+        </div>
+
+        <div class="slider-cta">
+          <button class="primary-button blue-button">View All Projects</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq-section" class="section-reveal faq-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="faq-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">
+            Answers to common questions about solar energy and our services
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How much does a solar installation typically cost?</span>
+              <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m6 9 6 6 6-6"></path>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>The cost of a solar installation varies based on several factors, including system size, equipment quality, and installation complexity. For residential systems, prices typically range from $15,000 to $30,000 before incentives. Commercial installations are priced based on specific business needs and energy requirements. Federal tax credits, local incentives, and financing options can significantly reduce your upfront costs. We provide detailed, transparent pricing in our personalized consultations.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How long does the installation process take?</span>
+              <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m6 9 6 6 6-6"></path>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>From contract signing to system activation, the typical timeline is 2-3 months. The actual installation usually takes only 1-3 days, but permitting, utility approval, and inspection processes account for most of the timeline. Our project managers keep you informed at every stage and handle all paperwork and coordination with local authorities and utility companies to ensure a smooth process.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What maintenance do solar panels require?</span>
+              <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m6 9 6 6 6-6"></path>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Solar systems are remarkably low-maintenance. Occasional cleaning (2-4 times per year) to remove dust and debris is typically sufficient to maintain optimal performance. In most climates, rainfall naturally cleans the panels. We offer maintenance plans that include professional cleaning, system inspections, and performance monitoring to ensure your system operates at peak efficiency throughout its lifespan.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Will solar panels work during a power outage?</span>
+              <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m6 9 6 6 6-6"></path>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Standard grid-tied solar systems will shut down during a utility power outage for safety reasons. However, systems with battery backup can continue to provide electricity during outages. We offer various energy storage solutions that can be tailored to your specific backup power needs, allowing you to maintain essential services or even full home functionality during grid disruptions.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What happens if I produce more electricity than I use?</span>
+              <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m6 9 6 6 6-6"></path>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>In areas with net metering policies, excess electricity is fed back into the grid, and you receive credits on your utility bill. These credits can offset future periods when your system produces less than you consume. Some utilities offer full retail rate compensation, while others use alternative compensation methods. During your consultation, we'll explain the specific net metering policies in your area and how they affect your return on investment.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-cta">
+          <p>Have more questions? Our solar experts are ready to help.</p>
+          <div class="faq-buttons">
+            <button class="primary-button blue-button">Contact Our Team</button>
+            <button class="secondary-button">Download Solar Guide</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta-section" class="section-reveal cta-section">
+      <div class="bg-elements">
+        <div class="cta-circle circle-1"></div>
+        <div class="cta-circle circle-2"></div>
+        <div class="cta-circle circle-3"></div>
+      </div>
+
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to Go Solar?</h2>
+          <p class="cta-subtitle">
+            Join thousands of satisfied customers who have made the switch to clean, renewable energy. Start your journey towards energy independence today.
+          </p>
+          
+          <p class="cta-description">
+            Our expert consultants are ready to design a customized solar solution that meets your energy needs, budget considerations, and aesthetic preferences. We handle every aspect of your solar journey from initial assessment to system activation and beyond.
+          </p>
+
+          <div class="cta-buttons">
+            <button class="cta-button primary-button">Get Free Consultation</button>
+            <a href="Files/Brochure.pdf" download="Hedge5-brochure.pdf"><button class="secondary-button">Download Brochure</button></a>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="contact-title">Call Us</div>
+              <p>Speak directly with our solar experts</p>
+              <a href="tel:+18005551234" class="contact-link">+1 (800) 555-1234</a>
+            </div>
+            
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+              </div>
+              <div class="contact-title">Email Us</div>
+              <p>Send your questions anytime</p>
+              <a href="mailto:solar@hedge5.com" class="contact-link">solar@hedge5.com</a>
+            </div>
+            
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+              </div>
+              <div class="contact-title">Schedule</div>
+              <p>Book your consultation</p>
+              <a href="#schedule" class="contact-link">Select Available Time</a>
+            </div>
+          </div>
+          
+          <p class="cta-footer">
+            Hedge5 is committed to sustainability and customer satisfaction. Our team is ready to help you harness the power of the sun with custom solar solutions designed for your specific needs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+            <!--=============== FOOTER ===============-->
+        <footer class="enhanced-footer">
+            <div class="footer-container">
+                <!-- Main Footer Content -->
+                <div class="footer-content">
+                    <!-- Brand Section -->
+                    <div class="footer-brand" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                        <img src="images/Hedge5-logo-main.png" alt="Hedge5 Logo" class="footer-logo">
+                        <p class="footer-description">
+                            Your sustainability partner. We help businesses achieve their sustainability goals through actionable insights and innovative technology.
+                        </p>
+                        <div class="footer-social">
+                            <a href="https://in.linkedin.com/company/hedge5" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                                <i class="ri-linkedin-box-fill"></i>
+                            </a>
+                            <a href="https://in.linkedin.com/company/hedge5" class="social-link" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href="https://in.linkedin.com/company/hedge5" class="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="https://in.linkedin.com/company/hedge5" class="social-link" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                                <i class="ri-youtube-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-section" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="calc.html">Solar Calculator</a></li>
+                            <li><a href="https://hedge5.in/index.html">Hedge5</a></li>
+                            <li><a href="faq.html">Faq's</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Services -->
+                    <div class="footer-section" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                        <h3>Services</h3>
+                        <ul class="footer-links">
+                            <li><a href="solar-energy.html">Solar Energy</a></li>
+                            <li><a href="wind-energy.html">Wind Energy</a></li>
+                            <li><a href="hydropower.html">Hydropower</a></li>
+                            <li><a href="green.html">Green Technology</a></li>
+                            <li><a href="index.html">Bio Solutions</a></li>
+                            <li><a href="ren.html">Renewable Energy</a></li>
+                            <li><a href="green-applications.html">Green Applications</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="footer-section" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                        <h3>Contact Info</h3>
+                        <div class="footer-contact">
+                            <div class="contact-item">
+                                <i class="ri-map-pin-line"></i>
+                                <span>Anthill IQ Workspace, Windsor F4, 75/B, Bannerghatta Rd, opp. Christ University, Syndicate Bank Colony, Omkar Nagar, Hulimavu, Bengaluru, Karnataka 560076</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="ri-phone-line"></i>
+                                <span>+91 7022305897</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="ri-mail-line"></i>
+                                <span>contact@hedge5.in</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="ri-time-line"></i>
+                                <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Bottom -->
+                <div class="footer-bottom">
+                    <div class="footer-copyright">
+                        <p>© 2025 Hedge5. All rights reserved.</p>
+                    </div>
+                    <div class="footer-legal">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+  <script src="solar-energy-script.js"></script>
+</body>
+</html>
